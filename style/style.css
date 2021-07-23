@@ -1,0 +1,103 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+/*Reset dos padrões da página*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preto);
+    font-family: 13px, helvetica;
+    color: #FFF;
+}
+
+header .conteiner{
+    height: 68px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'arial Black', Times;
+    font-size: 25px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #E5E5E5;
+    margin-right: 10px;
+    font-size: 14px;
+    font-family:'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+header nav a:hover{
+    color: #FFF;
+}
+
+/*Filme Principal*/
+
+.filme-principal{
+    font-size: 1.4vw;
+    background: url('/img/master-of-the-universe.png');
+    
+    height: 400px;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.titulo{
+    width: 36%;
+}
+
+.botao{
+    background-color: rgba(109,109,110,0.7);
+    border: none;
+    color: #FFF;
+
+    justify-content: center;
+    border-radius: 4px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    padding-left: 2rem;
+    padding-right: 2.4rem;
+    font-size: 1.6rem;
+    font: inherit;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: #FFF;
+    color: #141414;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.conteiner{
+    margin-left: 20px;
+}
+
+.filme-principal .conteiner{
+    width: 40%;
+}
